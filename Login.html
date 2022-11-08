@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<title>Login</title>
+		<style>
+        @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+             .container{
+           max-width: 100%;
+        }
+        .button:hover {
+            background-color:#e9bd72ef;
+            color: white;
+        }
+        .button{
+         font-family:'Trebuchet MS';
+         background-color: #fd7b6a;
+         color :rgb(255, 254, 254);
+         padding: 15px 32px;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border: none;
+         border-radius: 10px 10px 10px 10px;
+         -webkit-transition-duration: 0.4s; 
+         transition-duration: 0.4s;
+        }
+        .User:hover{
+            background-color:#dfdfdfef;
+        }
+        .User{
+            -webkit-transition-duration: 0.4s; 
+            transition-duration: 0.4s; 
+        }
+        .a {
+            color: #fd7b6a;
+            font-family:'Trebuchet MS';
+            font-weight: 400px;
+            -webkit-transition-duration: 0.4s; 
+            transition-duration: 0.4s; 
+          }
+          .a:hover{
+            color: #e9bd72ef;
+          }
+})
+    </style>
+	</head>
+
+	<body  style="background-color : #F8E2B9 ;">
+	 <div align = "center" style="padding-top: 60px">
+        <img src="resoure\Logo.png" width="10%">
+        <br>
+        <span style="color:#141414; font-family:'Kanit', sans-serif;font-size: 50px;"> ยื่นคำร้องขอ เพิ่ม-ถอน รายวิชา</span><br>
+        <span style="color:#fd7b6a; font-family:'Trebuchet MS'; font-size: 36px;" > Thammasat </span><span style="color: #252525; font-family:'Trebuchet MS'; font-size: 36px;"> University</span>
+    </div>
+			<br>
+			<div align = "center">
+			<br>
+			<input class = "User" id = "Username" name="name" type="text" style="border-radius: 10px 10px 10px 10px; border:none; padding: 13px ; width: 15%" placeholder = "  Username" >
+			<br>
+			<br>
+			<input class = "User" id = "Password" name="Pass" type="Password" style="border-radius: 10px 10px 10px 10px; border:none; padding: 13px ; width: 15%" placeholder = "  Password"><br>
+			</div>
+			<br>
+
+			<div align = "center">
+            <a><button onclick="Login()" class="button" type = "button" style="width: 10%;" id="Logbut" >Sign In</button></a>
+        </div>
+		<br>
+        <br>
+        <br>
+        <hr width=40% size=1 color="white"align="center"> 
+        <br>
+        <br>
+			<br><br>
+			<ul id="studentList">
+				
+			</ul>
+	</body>
+
+	<script src='js/Login.js'></script>
+	
+</html>

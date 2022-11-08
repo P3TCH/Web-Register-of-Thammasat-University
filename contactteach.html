@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>ระบบลงทะเบียน</title>
+    <link rel="stylesheet" href="./css/styleweb.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+    <link href='./css/Default.css' rel='stylesheet'>
+    <link href='./css/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   </head>
+<body onload="loadDoc()">
+  <div class="bg">
+        <div class="main">
+            <div class="header">
+              <div align="right" class="User" id = "User">
+                <div>
+                    Username
+                </div>
+                <div>
+                    Name
+                </div>
+            </div>
+            <div class="logout">
+                <a href="/Login"  class="button">ออกจากระบบ</a>
+            </div>
+                <img style="size: 50px;" class="logo" src="./resoure/logo.png"/>
+                <h1>มหาวิทยาลัยธรรมศาสตร์</h1>
+                <h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+                <br>
+            </div>
+            <div class="page">
+                <nav class="page__menu menu">
+                  <ul class="menu__list r-list" id="bar">
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สร้างคำขอใหม่</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สถานะคำร้อง</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ขัอมูลอาจารย์</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ตัวอย่างการกรอกคำร้อง</a></li>
+                  </ul>
+                </nav>
+            </div>
+             <div class="container">
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    
+    <div class="main-card">
+    <div class="cardss">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/1.jpg" alt="">
+           </div>         
+            <div class="details">
+             <div class="name">ผศ.ดร.ทรงศักดิ์ <br/>รองวิริยะพานิช</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 </div>
+             <div class="inform">0-2986-9156 ต่อ 204</div>
+             <div class="inform">rongviri@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/2.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.วนิดา <br/>พฤทธิวิทยา</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 </div>
+             <div class="inform">0-2986-9156 ต่อ 230</div>
+             <div class="inform">wanidap@cs.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/3.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.ธนาธร <br/>ทะนานทอง</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">0-2986-9156 ต่อ 217</div>
+             <div class="inform">tanatorn@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardss">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/4.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.วิรัตน์ <br/>จารีวงศ์ไพบูลย์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9156 ต่อ 202</div>
+             <div class="inform">wirat@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/5.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.เสาวลักษณ์ <br/>วรรธนาภา </div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 211</div>
+             <div class="inform">0-2986-9156 ต่อ 214</div>
+             <div class="inform">wsaowalu@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/17.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.มนวรรัตน์<br/>ผ่องไพบูลย์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">02-546-4444 ต่อ 219</div>
+             <div class="inform">pmonvora@staff.tu.ac.th</div>
+           </div> 
+         </div>
+         </div>
+        </div>
+      </div>
+       <div class="cardss" style="margin-right: 40px;" >
+        <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/7.jpeg" alt="">
+           </div>         
+            <div class="details">
+             <div class="name">รศ.ดร.ณัฐธนนท์ <br/>หงส์วริทธิ์ธร </div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9156 ต่อ 229</div>
+             <div class="inform">nuttanon@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/8.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.ประภาพร<br/>รัตนธำรง</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9256 ต่อ 225</div>
+             <div class="inform">rattanat@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/9.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">อ.ดร.ลัมพาพรรณ <br/>พันธ์ชูจิตร์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 224</div>
+             <div class="inform">02-546-4444 ต่อ 2157 ต่อ 224</div>
+             <div class="inform">tlumpapun_@sci.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardss">
+         <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/10.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">อ.ดร.ปกป้อง <br/>ส่องเมือง</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">0-2986-9156 ต่อ 213</div>
+             <div class="inform">pokpongs@staff.tu.ac.th
+
+</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/11.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.กษิดิศ<br/>ชาญเชี่ยว </div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">0-2986-9156 ต่อ 200</div>
+             <div class="inform">ckasidit@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/12.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.วิลาวรรณ <br/>รักผกาวงศ์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9156 ต่อ 215 </div>
+             <div class="inform">wilawan@cs.tu.ac.th</div>
+           </div> 
+         </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="cardss">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/13.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">รศ.ดร.เยาวดี<br/>เต็มธนาภัทร์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9156 ต่อ 208</div>
+             <div class="inform">tyaowade@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/14.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.เด่นดวง <br/>ประดับสุวรรณ </div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">0-2986-9156 ต่อ 214</div>
+             <div class="inform">denduang@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/15.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">ผศ.ดร.ปกรณ์ <br/>ลี้สุทธิพรชัย</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 210</div>
+             <div class="inform">02-564-4444 ต่อ 2157 ต่อ 222</div>
+             <div class="inform">pakornl@staff.tu.ac.th</div>
+           </div> 
+         </div>
+         </div>
+        </div>
+      </div>
+       <div class="cardss">
+        <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/18.jpeg" alt="">
+           </div>         
+            <div class="details">
+             <div class="name">ผศ.ดร.วรวรรณ <br/>ดีอัซ การ์บาโย</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">0-2986-9156 ต่อ 229</div>
+             <div class="inform">npapong@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/16.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">อ.ปกรณ์<br/>แววสว่างวงศ์</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2</div>
+             <div class="inform">0-2986-9256</div>
+             <div class="inform"> wpakorn@staff.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/6.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">อ.ดร.ฐาปนา <br/>บุญชู</div><br/>
+             <div class="inform">อาคาร LC-2 ชั้น 2 ห้อง 222</div>
+             <div class="inform">02-564-4444 ต่อ 2157 ต่อ 222</div>
+             <div class="inform">thapana@cs.tu.ac.th</div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+       </div>
+
+
+      <div class="button" style="justify-content: center">
+        <label for="one" class="activeone">1</label>
+        <label for="two" class="two">2</label>
+        
+      </div>
+     
+  </div>
+  <div class="last">
+            <h4>by CS264 Group 3</h4>
+            </div></div>
+</body>
+<script src="./js/synclogin.js"></script>
+</html>

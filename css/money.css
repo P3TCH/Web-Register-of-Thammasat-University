@@ -1,0 +1,72 @@
+.butacc {
+    border: 1px solid #fff4e7;
+    color: #000000;
+    box-shadow: 0 0 6px rgb(99, 150, 41);
+    background-color: rgb(255, 249, 241);
+    border-radius: 5px;
+    padding: 15px 38px 15px 38px;
+}
+
+
+.butnon{
+    border: 1px solid #fff8ef;
+    color: #000000;
+    box-shadow: 0 0 6px rgb(150, 41, 41);
+    background-color: rgb(255, 246, 234);
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+}
+
+.containerstatus {
+    text-align: center;
+}
+
+.containerstatus #top {
+    width: 300px;
+    border: 1px solid black;
+
+}
+
+.containerstatus table{
+    margin: auto;
+}
+
+.tablelist table, .tablelist tr , .tablelist th, .tablelist td{
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.tablelist{
+    background-color: #ffecd5;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.back button{
+    border: 1px solid #fff4e7;
+    color: #000000;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    background-color: rgb(255, 246, 234);
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+}
+
+.back button:active{
+    border: 1px solid #b67924;
+    box-shadow: 0 0 6px #b67924;
+}
+
+.datez{
+    text-align: center;
+}
+
+.dat{
+    margin: 0px;
+    padding: 7px 7px 7px 7px;
+    box-shadow: 0 0 6px #b67924;
+    border: 1px solid white;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ระบบลงทะเบียน</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+    <link href='./css/Default.css' rel='stylesheet'>
+    <link href='./css/menu.css' rel='stylesheet'>
+    <link href='./css/statusstu.css' rel='stylesheet'>
+    <style>
+        
+        
+    </style>
+</head>
+
+<body onload = "loadDoc(),loadStatus()">
+    <div class="bg">
+        <div class="main">
+            <div class="header">
+                <div align="right" class="User" id = "User">
+                    <div>
+                        Username
+                    </div>
+                    <div>
+                        Name
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="/Login"  class="button">ออกจากระบบ</a>
+                </div>
+                <img style="size: 50px;" class="logo" src="./resoure/logo.png"/>
+                <h1>มหาวิทยาลัยธรรมศาสตร์</h1>
+                <h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+                <br>
+            </div>
+            <div class="page">
+                <nav class="page__menu menu">
+                  <ul class="menu__list r-list" id="bar">
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สร้างคำขอใหม่</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สถานะคำร้อง</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ขัอมูลอาจารย์</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ตัวอย่างการกรอกคำร้อง</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="containerstatus">
+                <div>
+                    <h2>
+                        สถานะการยื่นคำร้อง
+                    </h2>
+                    <hr id='top'>
+                </div>
+                <div>
+                    <div id="num" style="margin-bottom: 20px;">
+                        
+                    </div>
+                    <div id="table">
+                        <!-- <table class="tablelist">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        คำร้องที่ : 1
+                                    </th>
+                                    <th>
+                                        คำร้องถูกส่งแล้ว
+                                    </th>
+                                    <th>
+                                        ค่าปรับที่ต้องจ่าย
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <a href="#0">ดูรายละเอียด</a></li>
+                                    </th>
+                                    <th>
+                                        สถานะ : กำลังตรวจสอบ
+                                    </th>
+                                    <th style="color: red;">
+                                        xxx.- บาท
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table> -->
+                    </div>
+                    <div>
+                        <button style="margin-top: 50px;" onclick="window.history.back()">ย้อนกลับ</button>
+                    </div>
+                    <div style="padding-bottom: 30px;">
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+            <h4>by CS264 Group 3</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/getstatustu.js"></script>
+<script src="./js/synclogin.js"></script>
+
+</html>

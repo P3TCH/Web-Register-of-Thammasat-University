@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Info</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+	<link href='./css/Default.css' rel='stylesheet'>
+	<link href='./css/menu.css' rel='stylesheet'>
+	<link href='./css/main.css' rel='stylesheet'>
+	<link href='./css/info.css' rel='stylesheet'>
+
+
+</head>
+
+
+<body onload="loadInfo()">
+	<div class="bg">
+		<div class="main">
+			<div class="header"><br>
+				<h3>ยินดีต้อนรับ Username [อาจารย์]</h3>
+				<div class="logout"><br>
+					<a href="./logout">ออกจากระบบ</a>
+				</div>
+				<img style="size: 50px;" class="logo" src="./resoure/logo.png" /><br>
+				<h1>มหาวิทยาลัยธรรมศาสตร์</h1><br>
+				<h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+				<br>
+			</div>
+			<div class="page">
+				<nav class="page__menu menu">
+					<ul class="menu__list r-list">
+						<li class="menu__group"><a href="./mainteacher" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+						<li class="menu__group"><a href="./checkword"class="menu__link r-link text-underlined">ยืนยันเอกสาร</a></li>
+						<li class="menu__group"><a href="./statusteach"class="menu__link r-link text-underlined">ยืนยันคำร้อง</a></li>
+						<li class="menu__group"><a href="./money" class="menu__link r-link text-underlined">ตั้งวันเลยกำหนด</a></li><br>
+					</ul>
+				</nav>
+			</div>
+
+			<div align="center">
+				<h1 id='studentHeader'>Student Info</h1><br>
+
+				<strong>
+					<div class="p2" align="left">
+						<div class="rcorners1" align="left">
+							<h2 id='datastudent' align="center" class="bgcolor1">ประวัตินักศึกษา</h2>
+							<div class="bg">
+								<label>ชื่อ:
+									<label id="fname"></label>
+
+									<label>นามสกุล: </label>
+									<label id="lname"></label><br><br>
+
+									<label>รหัสนักศึกษา: </label>
+									<label id="studentId"></label><br><br>
+
+									<label>อาจารย์ที่ปรึกษา: </label>
+									<label id="advisor"></label><br><br>
+
+									<label>ชั้นปี: </label>
+									<label id="studentYear"></label>
+
+									<label>สาขาวิชา: </label>
+									<label id="studyField"></label><br>
+
+									<h2 id='stuaddress' align="center" class="bgcolor1">ที่อยู่</h2>
+
+									<label>ที่อยู่: </label>
+									<label id="addressNumber"></label>
+
+									<label>หมู่: </label>
+									<label id="moo"></label>
+
+									<label>ตำบล: </label>
+									<label id="tumbol"></label>
+
+									<label>อำเภอ: </label>
+									<label id="amphur"></label>
+
+									<label>จังหวัด: </label>
+									<label id="provice"></label>
+
+									<label>รหัสไปรษณีย์: </label>
+									<label id="postalCode"></label><br><br>
+
+									<label>โทรศัพท์มือถือ: </label>
+									<label id="mobilePhone"></label>
+
+									<label>โทรศัพท์บ้าน: </label>
+									<label id="phone"></label><br><br>
+
+									<label>เหตุผลที่ขอ: </label>
+									<label id="cause"></label><br><br>
+
+									<label>ไฟล์ที่ต้องตรวจสอบ: </label>
+									<label id="files"></label><br>
+				</strong>
+			</div>
+		</div>
+
+
+	</div>
+	<div class='back' align="center"><br>
+		<button class="butacc" style="margin-top: 50px;" onclick="window.history.back()">ย้อนกลับ</button>
+	</div>
+	<div style="padding-bottom: 30px;">
+	</div>
+	</div>
+
+
+	<div class="last">
+		<h4>by CS264 Group 3</h4>
+	</div>
+
+
+
+</body>
+
+<script src='./js/info.js'></script>
+
+</html>

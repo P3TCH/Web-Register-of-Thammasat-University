@@ -1,0 +1,47 @@
+.photot table{
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+
+.photot .texta{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+.photot .texta button{
+    border: 1px solid rgb(255, 238, 223);
+    color: #000000;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    background-color: rgb(255, 246, 234);
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+}
+
+.photot .texta button:active{
+    border: 1px solid #b67924;
+    box-shadow: 0 0 6px #b67924;
+}
+
+.photot #photoz{
+    padding: 0px 20px 10px 20px;
+}
+
+.photot img{
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+}
+
+.container {
+    text-align: center;
+}
+
+#mainphoto {
+    width: 600px;
+}
+/* 
+    table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */

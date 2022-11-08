@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Info</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+	<link href='./css/Default.css' rel='stylesheet'>
+	<link href='./css/menu.css' rel='stylesheet'>
+	<link href='./css/info.css' rel='stylesheet'>
+
+</head>
+
+
+<body onload="loadDoc(),loadInfo()">
+	<div class="bg">
+		<div class="main">
+			<div class="header">
+				<div align="right" class="User" id="User">
+					<div>
+						Username
+					</div>
+					<div>
+						Name
+					</div>
+				</div>
+				<div class="logout">
+					<a href="/Login" class="button">ออกจากระบบ</a>
+				</div>
+				<img style="size: 50px;" class="logo" src="./resoure/logo.png" />
+				<h1>มหาวิทยาลัยธรรมศาสตร์</h1>
+				<h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+				<br>
+			</div>
+			<div class="page">
+				<nav class="page__menu menu">
+					<ul class="menu__list r-list" id="bar">
+						<li class="menu__group"><a href="" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สร้างคำขอใหม่</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สถานะคำร้อง</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ขัอมูลอาจารย์</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ตัวอย่างการกรอกคำร้อง</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div align="center">
+				<h1 id='studentHeader'>คำร้อง</h1><br>
+
+				<strong>
+					<div class="p2" align="left">
+						<div class="rcorners1" align="left">
+							<h2 id='datastudent' align="center" class="bgcolor1">ประวัตินักศึกษา</h2>
+							<div class="bg">
+								<label>ชื่อ:
+									<label id="fname"></label>
+
+									<label>นามสกุล: </label>
+									<label id="lname"></label><br><br>
+
+									<label>รหัสนักศึกษา: </label>
+									<label id="studentId"></label><br><br>
+
+									<label>อาจารย์ที่ปรึกษา: </label>
+									<label id="advisor"></label><br><br>
+
+									<label>ชั้นปี: </label>
+									<label id="studentYear"></label>
+
+									<label>สาขาวิชา: </label>
+									<label id="studyField"></label><br>
+
+									<h2 id='stuaddress' align="center" class="bgcolor1">ที่อยู่</h2>
+
+									<label>ที่อยู่: </label>
+									<label id="addressNumber"></label>
+
+									<label>หมู่: </label>
+									<label id="moo"></label>
+
+									<label>ตำบล: </label>
+									<label id="tumbol"></label>
+
+									<label>อำเภอ: </label>
+									<label id="amphur"></label>
+
+									<label>จังหวัด: </label>
+									<label id="provice"></label>
+
+									<label>รหัสไปรษณีย์: </label>
+									<label id="postalCode"></label><br><br>
+
+									<label>โทรศัพท์มือถือ: </label>
+									<label id="mobilePhone"></label>
+
+									<label>โทรศัพท์บ้าน: </label>
+									<label id="phone"></label><br><br>
+
+									<label>เหตุผลที่ขอ: </label>
+									<label id="cause"></label><br><br>
+
+									<label>ไฟล์ที่ต้องตรวจสอบ: </label>
+									<label id="files"></label><br><br>
+
+				</strong>
+			</div>
+			<strong>
+				<h2 id='datastudent' align="center" class="bgcolor1">รายวิชาที่ขอเพิ่ม</h2>
+				<div class="bg">
+					<table style="width:100%" id="table1">
+						<tr>
+							<th>รหัสวิชา</th>
+							<th>ชื่อวิชา</th>
+							<th>Section</th>
+							<th>วัน/เวลา</th>
+							<th>หน่วยกิต</th>
+							<th>ชื่อผู้สอน</th>
+						</tr>
+					</table>
+
+					<h2 id='stuaddress' align="center" class="bgcolor1">รายวิชาที่ขอถอน</h2>
+
+					<table style="width:100%" id="table2">
+						<tr>
+							<th>รหัสวิชา</th>
+							<th>ชื่อวิชา</th>
+							<th>Section</th>
+							<th>วัน/เวลา</th>
+							<th>หน่วยกิต</th>
+							<th>ชื่อผู้สอน</th>
+						</tr>
+
+					</table>
+
+			</strong>
+
+		</div>
+
+	</div>
+	</div>
+
+
+	<div class='back' align="center"><br>
+		<button class="butacc" style="margin-top: 50px;" onclick="window.history.back()">ย้อนกลับ</button>
+	</div>
+	<div style="padding-bottom: 30px;">
+	</div>
+
+
+
+	<div class="last">
+		<h4>by CS264 Group 3</h4>
+	</div>
+
+</body>
+<script src="./js/synclogin.js"></script>
+<script src='./js/infostudent.js'></script>
+
+</html>

@@ -1,0 +1,210 @@
+.date {
+    width: 1200px;
+    height: 110px;
+    padding-top: 10px;
+}
+.dateArea {
+    padding-top: 10px;
+	text-align: center;
+}
+.dateArea label {
+    font-size: 18px;
+}
+.dateArea input {
+    border: 2px solid #888;
+    width: 160px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.info {
+    width: 1200px;
+    height: 320px;
+}
+.infoArea {
+    margin-left: 40px;
+}
+.infoArea h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+.infoArea h2 {
+    font-weight: 100;
+    font-size: 18px;
+}
+.infoArea input,select {
+    border: 2px solid #888;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.infoArea table {
+    text-align: left;
+}
+.infoArea select[id=year], select[id=preName] {
+    width: 120px;
+}
+.infoArea input[id=name] {
+    width: 303px;
+}
+.infoArea input[id=lName], input[id=sid], input[id=teacher] {
+    width: 283px;
+}
+.infoArea i {
+    top: 50px;
+    right: 25px;
+    position: absolute;
+}
+.infoArea small {
+    top: 80px;
+    right: 20px;
+    position: absolute;
+ }
+
+.address {
+    width: 1200px;
+    height: 320px;
+}
+.addressArea {
+    margin-left: 40px;
+}
+.addressArea h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+.addressArea h2 {
+    font-weight: 100;
+    font-size: 18px;
+}
+.addressArea input {
+    border: 2px solid #888;
+    padding: 10px;
+    width: 240px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.addressArea input[id=house] {
+    width: 120px;
+}
+.addressArea input[id=province] {
+    width: 260px;
+}
+.addressArea input[id=moo], input[id=zip] {
+    width: 90px;
+}
+.addressArea input[id=phone], input[id=phoneH] {
+    width: 310px;
+}
+.addressArea input[id=district], input[id=amper] {
+    width: 380px;
+}
+.addressArea table {
+    text-align: left;
+}
+.addressArea i {
+    top: 50px;
+    right: 25px;
+    position: absolute;
+}
+.addressArea small {
+    top: 80px;
+    right: 20px;
+    position: absolute;
+}
+
+.detail {
+    width: 1200px;
+    height: 100%;
+}
+.detailArea {
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+.detailArea h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+.detailArea th {
+    font-size: 18px;
+    font-weight: 100;
+}
+.detailArea label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.detailArea td {
+    text-align: center;
+}
+.detailArea input[type=text],textarea {
+    border: 2px solid #888;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+.detailArea textarea {
+    width: 1090px;
+    height: 100px;
+}
+.detailArea button {
+    padding: 10px;
+    border-radius: 7px;
+    width: 80px;
+    background: #fff;
+    color: #008000;
+    border: 2px solid #008000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.detailArea button[id="removeBtn"] {
+    padding: 10px;
+    border-radius: 7px;
+    width: 90px;
+    background: #fff;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.detailArea button:hover {
+    background: #008000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.detailArea button[id="removeBtn"]:hover {
+    background: #e74c3c;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.form-control {
+    position: relative;
+}
+.form-control.error input {
+    border-color: #e74c3c;
+}
+.form-control.success input{
+    border-color: #008000;
+}
+.form-control small{
+    color: #e74c3c;
+    font-weight: 100;
+    font-size: 15px;
+    visibility: hidden;
+}
+.form-control i {
+    visibility: hidden;
+}
+.form-control.error small {
+    visibility: visible ;
+}
+.form-control.form-control.success i.fa-check-circle {
+    color: #008000;
+    visibility: visible;
+}
+.form-control.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}

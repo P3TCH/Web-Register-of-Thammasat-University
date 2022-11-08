@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ระบบลงทะเบียน</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+  <link href='./css/Default.css' rel='stylesheet'>
+  <link href='./css/menu.css' rel='stylesheet'>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body onload="loadDoc()">
+  <div class="bg">
+    <div class="main">
+      <div class="header">
+        <h3>ยินดีต้อนรับ Username [อาจารย์]</h3>
+        <div class="logout">
+          <a href="./logout">ออกจากระบบ</a>
+        </div>
+        <img style="size: 50px;" class="logo" src="./resoure/logo.png" />
+        <h1>มหาวิทยาลัยธรรมศาสตร์</h1>
+        <h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+        <br>
+      </div>
+      <div class="page">
+        <nav class="page__menu menu">
+          <ul class="menu__list r-list">
+            <li class="menu__group"><a href="./mainteacher" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+            <li class="menu__group"><a href="./checkword" class="menu__link r-link text-underlined">ยืนยันเอกสาร</a>
+            </li>
+            <li class="menu__group"><a href="./statusteach" class="menu__link r-link text-underlined">ยืนยันคำร้อง</a>
+            </li>
+            <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">ตั้งวันเลยกำหนด</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h2 style="background-color:#ffcc00; text-align:center;">รายชื่อนักศึกษาที่เพิ่ม-ถอนรายวิชา</h2>
+          <table id="table">
+          <tr>
+            <th>ชื่อ-นามสกุล</th>
+            <th>รหัสวิชา</th>
+            <th>Section</th>
+            <th>รอผลดำเนินการ</th>
+          </tr>
+         <!-- <table id="table">
+          <tr>
+            <th>ชื่อ-นามสกุล</th>
+            <th>รหัสวิชา</th>
+            <th>Section</th>
+            <th>รอผลดำเนินการ</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="./accword">อนุมัติเอกสาร</a></td>
+          </tr> -->
+        </table>
+      </div>
+      <div class="last">
+        <h4>by CS264 Group 3</h4>
+      </div>
+    </div>
+  </div>
+</body>
+<script src='./js/getsubject.js'></script>
+
+</html>

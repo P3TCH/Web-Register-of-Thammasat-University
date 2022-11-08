@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ระบบลงทะเบียน</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Kanit%7CPrompt' rel='stylesheet'>
+    <link href='./css/Default.css' rel='stylesheet'>
+    <link href='./css/menu.css' rel='stylesheet'>
+    <link href='./css/Request.css' rel='stylesheet'>
+    <link href='./resoure/css/all.css' rel='stylesheet'>
+    <style>
+    </style>
+</head>
+
+<body onload="loadDoc()">
+    <div class="bg">
+        <div class="main">
+            <div class="header">
+                <div align="right" class="User" id = "User">
+                    <div>
+                        Username
+                    </div>
+                    <div>
+                        Name
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="/Login"  class="button">ออกจากระบบ</a>
+                </div>
+                <img style="size: 50px;" class="logo" src="./resoure/logo.png"/>
+                <h1>มหาวิทยาลัยธรรมศาสตร์</h1>
+                <h2>ระบบคำร้องลงทะเบียนเพิ่ม-ถอน รายวิชา</h2>
+                <br>
+            </div>
+            <div class="page">
+                <nav class="page__menu menu">
+                  <ul class="menu__list r-list" id="bar">
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">หน้าหลัก</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สร้างคำขอใหม่</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">สถานะคำร้อง</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ขัอมูลอาจารย์</a></li>
+                    <li class="menu__group"><a href="" class="menu__link r-link text-underlined">ตัวอย่างการกรอกคำร้อง</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="date">
+                <div class="dateArea">
+                    <form id="form" class="form">
+                        <div class="form-control">
+                            <label for="date">วันที่กรอกคำร้อง</label><br>
+                            <input type="date" name="date" id="date"><br>
+                            <i class="fas fa-check-circle" style="top: 38px; right: 545px; position: absolute;"></i>
+                            <i class="fas fa-exclamation-circle" style="top: 38px; right: 545px; position: absolute;"></i>
+                            <small id="sDate">error</small>
+                        </div><hr color="#ffd579" style="border: 1.3px solid #ffd579;" width='93%'>
+                    </form>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infoArea">
+                    <h1>ประวัตินักศึกษา</h1>
+                    <table>
+                        <tr>
+                    <form id="form" class="form">
+                        <th>
+                        <h2>คำนำหน้าชื่อ<span></span></h2>
+                        <select name="preName" id="preName">
+                            <option>นาย</option>
+						    <option>นาง</option>
+						    <option>นางสาว</option>
+                        </select>
+                        </th>
+                        <th>
+                        <div class="form-control">
+                            <h2>ชื่อ<span></span></h2>
+                            <input type="text" name="name" id="name" placeholder="ชื่อ...">
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sName">error</small>
+                        </div>
+                        </th>
+                        <th>
+                        <div class="form-control">
+                            <h2>นามสกุล<span></span></h2>
+                            <input type="text" name="lName" id="lName" placeholder="นามสกุล...">
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sLName">error</small>
+                        </div>
+                        </th>
+                        <th>
+                            <div class="form-control" id="num">
+                                <h2>เลขทะเบียน<span></span></h2>
+                                <input type="text" name="sid" id="sid" placeholder="6X096XXXXX..." maxlength="10" pattern="[0-9]+"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small id="sSid">error</small>
+                            </div>
+                    </th>
+                        </tr>
+                        <tr>
+                            <th>
+                        <h2>ชั้นปีที่<span></span></h2>
+                        <select name="year" id="year">
+                            <option>1</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						    <option>5</option>
+						    <option>6</option>
+						    <option>7</option>
+                        </select>
+                        </th>  
+                       
+                    <th>
+                        <h2>สาขาวิชา<span></span></h2>
+                        <select name="subject" id="subject">
+                            <option>คณิตศาสตร์</option>
+                            <option>คณิตศาสตร์ประยุกต์</option>
+                            <option>สถิติ</option>
+                            <option>คณิตศาสตร์การเงิน</option>
+                            <option>สถิติประยุกต์</option>
+                            <option>วิทยาการประกันภัย</option>
+                            <option>ฟิสิกส์</option>
+                            <option>ฟิสิกส์อิเล็กทรอนิกส์</option>
+                            <option>เคมี</option>
+                            <option>เทคโนโลยีพลังงานชีวภาพและการแปรรูปเคมีชีวภาพ</option>
+                            <option>คอมพิวเตอร์และวิทยาการสารสนเทศ</option>
+                            <option>คอมพิวเตอร์ประยุกต์</option>
+                            <option>เทคโนโลยีการเรียนรู้</option>
+                            <option>เทคโนโลยีการเกษตร</option>
+                            <option>สิ่งแวดล้อม</option>
+                            <option>เทคโนโลยีเพื่อการพัฒนายั่งยืน</option>
+                            <option>เทคโนโลยีการอาหาร</option>
+                            <option>นวัตกรรมการอาหาร</option>
+                            <option>เทคโนโลยีชีวภาพ</option>
+                            <option>เทคโนโลยีสิ่งทอ</option>
+                            <option>วัสดุศาสตร์</option>
+                        </select>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>อาจารย์ที่ปรึกษา<span></span></h2>
+                            <input type="text" name="teacher" id="teacher" placeholder="ชื่ออาจารย์ที่ปรึกษา...">
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sTeacher">error</small>
+                        </div>
+                        </th>
+                    </form>
+                </tr>
+                </table>
+                </div>
+            </div>
+            <hr color="#ffd579" style="border: 1.3px solid #ffd579;" width='93%'>
+            <div class="address">
+                <div class="addressArea">
+                    <h1>ที่อยู่นักศึกษาที่สามารถติดต่อได้</h1>
+                    <table>
+                        <tr>
+                    <form id="form" class="form">
+                        <th>
+                        <div class="form-control">
+                            <h2>บ้านเลขที่<span></span></h2>
+                            <input type="text" name="house" id="house" placeholder="XXX/XXX...">
+                            <i class="fas fa-check-circle"></i>
+					    	<i class="fas fa-exclamation-circle"></i>
+                            <small id="sHouse">error</small>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>หมู่ที่<span></span></h2>
+                            <input type="text" name="moo" id="moo" placeholder="XX..."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sMoo">error</small>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>ตำบล<span></span></h2>
+                            <input type="text" name="district" id="district" placeholder="ตำบล...">
+                            <i class="fas fa-check-circle"></i>
+					    	<i class="fas fa-exclamation-circle"></i>
+                            <small id="sDistrict">error</small>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>อำเภอ<span></span></h2>
+                            <input type="text" name="amper" id="amper" placeholder="อำเภอ...">
+                            <i class="fas fa-check-circle"></i>
+					    	<i class="fas fa-exclamation-circle"></i>
+                            <small id="sAmper">error</small>
+                        </div>
+                    </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                        <div class="form-control">
+                            <h2>จังหวัด<span></span></h2>
+                            <input type="text" name="province" id="province" placeholder="จังหวัด...">
+                            <i class="fas fa-check-circle"></i>
+				    		<i class="fas fa-exclamation-circle"></i>
+                            <small id="sProvince">error</small>
+                        </div>
+                    </th>
+                    <th colspan="2" style="padding: 0 0 0 0">
+                        <table>
+                            <tr>
+                                <th>
+                        <div class="form-control">
+                            <h2>รหัสไปรษณีย์<span></span></h2>
+                            <input type="text" name="zip" id="zip" placeholder="XXXXX..." maxlength="5"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <i class="fas fa-check-circle"></i>
+					    	<i class="fas fa-exclamation-circle"></i>
+                            <small id="sZip">error</small>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>โทรศัพท์มือถือ<span></span></h2>
+                            <input type="text" name="phone" id="phone" placeholder="0XXXXXXXXX..." maxlength="10"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <i class="fas fa-check-circle"></i>
+					    	<i class="fas fa-exclamation-circle"></i>
+                            <small id="sPhone">error</small>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-control">
+                            <h2>โทรศัพท์บ้าน<span></span></h2>
+                            <input type="text" name="phoneH" id="phoneH" placeholder="01XXXXXXXX..." maxlength="9"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sPhoneH">error</small>
+                        </div>
+                        </th>
+                    </tr>
+                    </table>
+                    </th>
+                    </form>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+            <hr color="#ffd579" style="margin-top: 30px; border: 1.3px solid #ffd579;" width='93%'>
+            <div class="detail">
+                <div class="detailArea">
+                    <h1>รายละเอียดการเพิ่ม-ถอนรายวิชา</h1>
+                    <label for="cAdd">จำนวนขอเพิ่มรายวิชา</label>
+                    <input type="text" name="cAdd" id="cAdd" value="0" disabled="disabled" style="width: 30px;">
+                    <button onclick="chanceAddTable('add')" style="width: 50px;">เพิ่ม</button>
+                    <button id="removeBtn" onclick="chanceAddTable('remove')" style="width: 50px;">ลบ</button>
+                    <hr color="#888" style="margin-top: 20px; margin-left: 0px; border: 1px solid #888;" width='95%'>
+                    <table id='tableAdd' hidden = 'true'>
+                        <tr>
+                            <th>ลำดับ</th>
+						    <th>รหัสวิชา</th>
+						    <th>ชื่อวิชา</th>
+						    <th>Section</th>
+						    <th>วัน/เวลา</th>
+						    <th>หน่วยกิต</th>
+						    <th>ชื่อผู้สอน</th>
+                            <th>ผู้สอนอนุญาต</th>
+                        </tr>
+                    </table><br>
+                    <label for="cWithdraw">จำนวนขอถอนรายวิชา</label>
+                    <input type="text" name="cWithdraw" id="cWithdraw" value="0" disabled="disabled" style="width: 30px;">
+                    <button onclick="chanceWithdrawTable('add')" style="width: 50px;">เพิ่ม</button>
+                    <button id="removeBtn" onclick="chanceWithdrawTable('remove')" style="width: 50px;">ลบ</button>
+                    <hr color="#888" style="margin-top: 20px; margin-left: 0px; border: 1px solid #888;" width='95%'>
+                    <table id='tableWithdraw' hidden = 'true'>
+                        <tr>
+                            <th>ลำดับ</th>
+						    <th>รหัสวิชา</th>
+						    <th>ชื่อวิชา</th>
+						    <th>Section</th>
+						    <th>วัน/เวลา</th>
+						    <th>หน่วยกิต</th>
+						    <th>ชื่อผู้สอน</th>
+                            <th>ผู้สอนอนุญาต</th>
+                        </tr>
+                    </table><br>
+
+                    <form id="form" class="form">
+                        <div class="form-control">
+                            <label for="cause">เหตุผลที่ขอเพิ่ม-ถอนรายวิชา</label><br><br>
+                            <textarea type="text" name="cause" id="cause" placeholder="เพราะ..."></textarea><br>
+                            <i class="fas fa-check-circle"></i>
+						    <i class="fas fa-exclamation-circle"></i>
+                            <small id="sCause">error</small><br><br>
+                        </div>
+                    </form>
+                    <form action="upload.php" method = "post" enctype="multipart/form=data">
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+                        <label for="studentfile" style = "font-size: 23px;" >คลิปเพื่ออัพโหลดไฟล์เอกสารผู้ปกครอง:</label>
+                        <input type="file" id="studentfile" name="studentfile" style= "padding-top: 5px; padding-bottom:10px; font-size:23px;">
+                        
+                        <br><br>
+                        
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    </form>
+                    <button onclick="checkInputs()">ส่งคำร้อง</button>
+                </div>
+            </div>
+            <div class="last">
+                <h4>by CS264 Group 3</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/Request.js"></script>
+</html>

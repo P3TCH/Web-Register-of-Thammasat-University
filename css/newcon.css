@@ -1,0 +1,111 @@
+
+span {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.container .box {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.container h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* table, th, tr, td {
+border: 1px solid black;
+border-collapse: collapse;
+} */
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+th {
+  padding: 0px 10px 0px 10px;
+}
+
+.date {
+  width: 100%;
+  padding-left: 20px;
+}
+
+select {
+  padding: 9px 9px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  box-shadow: 0 0 6px rgb(138, 138, 138);
+  width: 100px;
+  border-radius: 5px;
+}
+
+select:focus {
+  border: 1px solid #b67924;
+  box-shadow: 0 0 6px #b67924;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="numbers"],
+input[type="tel"] {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  box-shadow: 0 0 6px rgb(138, 138, 138);
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+  border: 1px solid #b67924;
+  box-shadow: 0 0 6px #b67924;
+}
+
+.button {
+  border: 1px solid rgb(255, 255, 255);
+  color: #000000;
+  box-shadow: 0 0 6px rgb(138, 138, 138);
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+}
+
+.button:active {
+  border: 1px solid #b67924;
+  box-shadow: 0 0 6px #b67924;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+textarea {
+  padding: 10px;
+  width: 97%;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  box-shadow: 0 0 6px rgb(138, 138, 138);
+  border-radius: 5px;
+}
+
+#addItems {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

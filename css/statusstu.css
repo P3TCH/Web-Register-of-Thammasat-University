@@ -1,0 +1,46 @@
+.containerstatus {
+    text-align: center;
+}
+
+.containerstatus #top {
+    width: 300px;
+    border: 1px solid black;
+
+}
+
+.containerstatus table{
+    margin: auto;
+}
+
+    /* table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+.tablelist table, .tablelist tr , .tablelist th, .tablelist td{
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.tablelist{
+    background-color: #fff4e7;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    border-radius: 10px;
+    min-width: 600px;
+}
+
+.containerstatus button{
+    border: 1px solid #fff4e7;
+    color: #000000;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    background-color: rgb(255, 246, 234);
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+}
+
+.containerstatus button:active{
+    border: 1px solid #b67924;
+    box-shadow: 0 0 6px #b67924;
+}

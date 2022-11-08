@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Kanit';
+    background-color: #fff3da;
+}
+.main{
+    margin: auto;
+    background-color: #ffecc8;
+    max-width: 1200px;
+    min-width: 800px;
+}
+.header {
+    background-color: #ffdb94;
+    text-align: center;
+    border-radius: 5px;
+}
+.header h1{
+    margin: 0px;
+}
+.header h2{
+    margin-top: 0px;
+}
+.header h3{
+    margin: 0;
+    text-align: right;
+    font-weight: lighter;
+    padding-right: 20px;
+}
+.logout{
+    margin: 0;
+    text-align: right;
+    font-size: 15px;
+    font-weight: lighter;
+    padding-right: 20px;
+}
+.last{
+    background-color: #ffdb94;
+    text-align: center;
+    border-radius: 10px;
+}
+.last h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: lighter;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.menubar {
+    background-color: #ffc859;
+}
+
+.nbutton{
+    border: 1px solid rgb(255, 238, 223);
+    color: #000000;
+    box-shadow: 0 0 6px rgb(138, 138, 138);
+    background-color: rgb(255, 246, 234);
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+}
+
+.nbutton:active{
+    border: 1px solid #b67924;
+    box-shadow: 0 0 6px #b67924;
+}
